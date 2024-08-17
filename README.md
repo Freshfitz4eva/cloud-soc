@@ -3,16 +3,16 @@
 
 ## Introduction
 
-I build is a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts,and create incidents. I measured Some security metrics in the insecure environment for a full 24 hrs, and apply some security controls to harden the environment,I also show the cost anlysis of running Azure.
-
-Cost Analyst
-![image](https://github.com/user-attachments/assets/8539400f-26fc-47f7-bb14-edbfa83f5f72)
+I built a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts,and create incidents. I measured Some security metrics in the insecure environment for a full 24 hrs, and apply some security controls to harden the environment,I also show the cost anlysis/management of running Azure.
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+
+Cost Analyst/Management 
+![image](https://github.com/user-attachments/assets/8539400f-26fc-47f7-bb14-edbfa83f5f72)
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
@@ -32,7 +32,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
+
+<img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
