@@ -34,7 +34,7 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
 
-<img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
+ Virtual Machines (2 windows,1 linux) <img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
