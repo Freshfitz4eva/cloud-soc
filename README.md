@@ -86,3 +86,5 @@ It is worth noting that if the resources within the network were heavily utilize
 
 
 Azure Active Directory (now renamed to Microsoft Entra ID) Overview - Users, Groups, and Access Management
+
+(https://github.com/user-attachments/assets/d369f72d-6b62-4083-8506-485dac05af93)
