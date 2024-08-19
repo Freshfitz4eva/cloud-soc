@@ -24,7 +24,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
+- Virtual Machines (1 windows, 1 linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
@@ -34,7 +34,11 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
 
- Virtual Machines (2 windows,1 linux) <img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
+ Virtual Machines (1 windows,1 linux) <img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
+
+Turning off firewall setting
+
+<img width="420" alt="Screenshot 2024-08-17 at 10 15 02 AM" src="https://github.com/user-attachments/assets/e80981f2-0d3d-48e8-a342-b18e87bdb3f2">
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
