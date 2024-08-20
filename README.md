@@ -24,7 +24,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (1 windows, 1 linux)
+- Virtual Machines(1 windows,1 linux,1 attack)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
@@ -35,6 +35,9 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
 
  Virtual Machines (1 windows,1 linux) <img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
+
+<img width="587" alt="Screenshot 2024-08-19 at 7 06 45 PM" src="https://github.com/user-attachments/assets/98ecdf9e-ab08-4dbd-8185-096bf1f94385">
+ 
 
 Turning off firewall setting
 
