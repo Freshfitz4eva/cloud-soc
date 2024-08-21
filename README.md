@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+
+<img width="870" alt="Screenshot 2024-08-21 at 9 51 59 AM" src="https://github.com/user-attachments/assets/b34a5ad9-526a-4c97-b6da-981c2e50c1d0">
 
 ## Introduction
 
@@ -10,9 +11,6 @@ I built a mini honeynet in Azure and ingest log sources from various resources i
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
-
-Cost Analyst/Management 
-![image](https://github.com/user-attachments/assets/8539400f-26fc-47f7-bb14-edbfa83f5f72)
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
@@ -36,9 +34,10 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
  Virtual Machines (1 windows,1 linux) <img width="602" alt="Screenshot 2024-08-17 at 12 10 03 AM" src="https://github.com/user-attachments/assets/3a65b2af-b628-4e15-9b4b-a674d9bdc7b8">
 
-<img width="587" alt="Screenshot 2024-08-19 at 7 06 45 PM" src="https://github.com/user-attachments/assets/98ecdf9e-ab08-4dbd-8185-096bf1f94385">
- 
+(1 Attack VM) 
 
+<img width="385" alt="Screenshot 2024-08-21 at 10 18 54 AM" src="https://github.com/user-attachments/assets/0099b0a1-95a2-4087-9dca-c3ccff6f3e20">
+ 
 Turning off firewall setting
 
 <img width="420" alt="Screenshot 2024-08-17 at 10 15 02 AM" src="https://github.com/user-attachments/assets/e80981f2-0d3d-48e8-a342-b18e87bdb3f2">
@@ -79,6 +78,9 @@ Stop Time	2023-03-19 15:37
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
+
+Cost Analyst/Management 
+![image](https://github.com/user-attachments/assets/8539400f-26fc-47f7-bb14-edbfa83f5f72)
 
 ## Conclusion
 
